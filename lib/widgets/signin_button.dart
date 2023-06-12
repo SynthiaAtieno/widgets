@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:widgets/palletes.dart';
 
 class GradientButton extends StatelessWidget {
-  const GradientButton({Key? key}) : super(key: key);
+  var funtion;
+   GradientButton({required this.funtion, Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class GradientButton extends StatelessWidget {
         )
       ),
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: funtion,
         style: ElevatedButton.styleFrom(
           fixedSize: const Size(300, 55),
           backgroundColor: Colors.transparent,
