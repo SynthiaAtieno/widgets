@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/main_screen.dart';
 import 'palletes.dart';
 import 'login_screen.dart';
 
