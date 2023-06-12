@@ -3,6 +3,8 @@ import 'package:widgets/widgets/button.dart';
 import 'package:widgets/widgets/login_field.dart';
 import 'package:widgets/widgets/signin_button.dart';
 
+import 'main_screen.dart';
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -48,7 +50,11 @@ class LoginScreen extends StatelessWidget {
                 const SizedBox(height: 15),
                 const LoginField(hintText: "Password"),
                 const SizedBox(height: 20),
-                const GradientButton()
+                 GradientButton(
+                  funtion:(){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => MainScreen()));
+                  },
+                )
               ],
             ),
           ),
