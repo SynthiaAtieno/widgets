@@ -1,6 +1,6 @@
 # widgets
 
-A new Flutter project.
+A new Flutter project that explains more on widgets
 
 ## Getting Started
 
